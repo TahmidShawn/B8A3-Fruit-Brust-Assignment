@@ -1,11 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-Fruit-Brust</title>
+    <!-- tailwind and daisyui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/9423b56e09.js" crossorigin="anonymous"></script>
+    <!-- Lato google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- custom tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom css -->
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h2>Hi</h2>
+
+<body class="lato-font">
+    <!-- This is header section  -->
+    <header class="max-w-screen-xl mx-auto">
+        
+        <!-- This is navbar section  -->
+        <nav class="navbar bg-white lg:bg-red-400 rounded-full mt-5">
+            <div class="navbar-start  hidden lg:flex">
+                <ul class="flex justify-center items-center gap-5 ml-5 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Fruits</a></li>
+                </ul>
+            </div>
+
+            <div
+                class=" flex flex-row-reverse justify-between lg:justify-center  w-screen lg:navbar-center text-black lg:text-white">
+                <div class="dropdown relative">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-5">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./images/logo.png" alt="" class="w-10 h-10">
+                    <h2 class="text-2xl">Fruit Burst</h2>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex navbar-end">
+                <!-- <a class="btn">Button</a> -->
+                <input type="text" placeholder="Type here" class="relative input h-10 mr-4 input-bordered w-full max-w-xs rounded-full"/>
+                <i class="cursor-pointer absolute right-20 fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<nav class="navbar bg-red-400 rounded-full">
+    <div class="navbar-start hidden lg:flex">
+        <ul class="flex justify-center items-center gap-5 text-white ml-8">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+        </ul>
+    </div>
+    <div class="w-screen md:w-full lg:w-full flex justify-between lg:justify-center border-2 border-black">
+        <div class="flex justify-center items-center gap-2">
+            <img src="./images/logo.png" alt="" class="w-8">
+            <h2 class="text-2xl font-bold text-white">Fruit Burst</h2>
+        </div>
+        <div class="dropdown flex">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </label>
+            <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Item 1</a></li>
+                <li><a>Item 3</a></li>
+            </ul>
+        </div>
+
+        <div class="hidden md:hidden lg:flex">
+            <a class="btn">Button</a>
+        </div>
+    </div>
+
+    <div class="navbar-end sm:hidden lg:flex">
+        <a class="btn">Button</a>
+    </div>
+</nav> -->
